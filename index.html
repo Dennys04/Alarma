@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="resources/css/main.css">
+	<link rel="shortcut icon" href="img/alarm.png">
+	<title>Alarm Clock</title>
+</head>
+<body>
+	<div id="container">
+		<h1>ALARMA</h1>
+		<div id="inputs">	
+			<input id="alarmTime" type="datetime-local">
+			<button class="btn" id="alarmButton" onclick="setAlarm(this);">Agregar Alarm</button>
+		</div>	
+
+		<div id="alarmOptions" style="display:none;">
+			<button class="btn" onclick="snooze();">5 minutos más</button>
+			<button class="btn" onclick="stopAlarm();">Detener Alarma</button>
+		</div>
+	</div>
+
+	<p>Creado por Dennys &copy; Dennys Morillo - 2021-2022</p>
+
+	<script src="resources/script/script.js"></script>
+</body>
+</html>
